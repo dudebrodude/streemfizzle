@@ -5,8 +5,10 @@ Streemfeed::Application.routes.draw do
 
   resources :photos
 
+  resources :calendar
+
   get "inbox/index"
-  get "inbox/show"
+  get "calendar/show"
   get 'inbox' => 'inbox#index'
   resources :checkins
 
