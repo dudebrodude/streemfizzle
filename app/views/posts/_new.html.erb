@@ -1,0 +1,19 @@
+ <button class="btn btn-primary mb10" data-toggle="modal" data-target="#myModal">
+  <%= fa_icon 'check' %> Check in
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg2b b1p222">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="holder-head b1p222" id="myModalLabel">Checking in at <%= @club.name %></h4>
+      </div>
+      <div class="modal-body">
+        <%= render 'checkins/form' %>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>

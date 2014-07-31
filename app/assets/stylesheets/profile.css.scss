@@ -1,0 +1,63 @@
+/* unvisited link */
+a:link {
+    color: #888;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #888;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #888;
+    text-decoration: none;
+}
+.sidebar-wrap{
+			margin-top:25px;
+	padding:15px;
+}
+.sidebar-title{
+	
+	font:1em 'Arial';
+	color:#999;
+	margin-top:-15px;
+	padding:7px;
+	margin-bottom:1px;
+}
+.sidebar-option{
+	background: #1e1e1e;
+	font:1em 'Arial';
+	color:#888;
+	padding:7px;
+	margin-bottom:1px;
+
+}
+.sidebar-sub-title{
+	background:#141414;
+	font:1em 'Arial';
+	color:#999;
+	padding:7px;
+	margin-top:0px;
+	margin-bottom:1px;
+}
+.main-wrap{
+	
+	margin-top:5px;
+	padding:15px;
+}
+.avatar{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+

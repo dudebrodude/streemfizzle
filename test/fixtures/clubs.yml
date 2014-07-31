@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Tatou
+  phone: 3105551212
+  address: "1424 Santa Monica Bl., Los Angeles, CA"
+
+two:
+  name: Saturn
+  phone: 3105551215
+  address: "1341 3rd St., Santa Monica, CA"

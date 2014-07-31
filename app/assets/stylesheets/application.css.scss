@@ -1,0 +1,343 @@
+@import "../../../vendor/assets/stylesheets/bootstrap/bootstrap.scss";
+@import "spacing";
+@import "welcome";
+@import "colors";
+@import "clubs";
+@import "posts";
+@import "rails_bootstrap_forms";
+@import "font-awesome";
+@import "fullcalendar";
+
+body {
+padding-top: 60px;
+}
+body, html {
+background: #282828;
+color:#fff;
+
+}
+table{
+width:100%;
+
+}
+
+td{
+color:#999;
+}
+
+tr:hover {
+
+padding:5px;
+text-decoration:none;
+}
+.modal-dialog {
+    background: none ;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    width: 100%;
+    padding:0;
+}
+.modal-content {
+    background-clip: padding-box;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: medium none;
+    position: relative;
+}
+.modal-header {
+    background: none repeat scroll 0 0 #1e1e1e;
+    border-bottom: 1px solid #3e3e3e;
+    min-height: 16.4286px;
+    padding: 15px;
+}
+.modal-body {
+    background:#222;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: relative;
+}
+.modal-footer {
+    background:#232323;
+    border-top: 1px solid #3e3e3e;
+    margin-top: 0;
+    padding: 19px 20px 20px;
+    text-align: right;
+}
+
+.headline {
+    background: none repeat scroll 0 0 #222;
+    border-radius: 5px 5px 0 0;
+    color: #c4c4c4;
+ 
+    padding: 15px;
+}
+.forgot-pass{
+
+	   color: #818181;
+    margin-top: 20px;
+}
+
+.menu-option{
+	background:#333;
+	text-decoration:none;
+	border-radius:5px;
+
+
+}
+
+.holder {
+    
+ 
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    padding: 10px;
+}
+.holder-head {
+    background: none repeat scroll 0 0 #222;
+    border-bottom: 1px solid #333;
+    border-radius: 5px 5px 0 0;
+    color: #c4c4c4;
+    font-size: 1.25em;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    padding: 10px 8px;
+}
+
+.home-holder{
+
+	margin-top:35px;
+
+	
+}
+.reg-holder{
+	    background: none repeat scroll 0 0 #2b2b2b;
+    border-radius: 4px;
+	padding:20px;
+	margin-top:50px;
+}
+
+.well {
+    background: linear-gradient(#1e1e1e, #1b1b1b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 2px solid #111111;
+    border-radius: 4px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    color: #999;
+    margin-top: 40px;
+    min-height: 20px;
+    padding: 19px;
+}
+.welcome {
+background: none repeat scroll 0 0 #121212;
+border-radius: 3px;
+color: #999;
+font-size: 2em;
+margin-bottom: 15px;
+padding: 6px 6px 6px 32px;
+text-align: left;
+}
+.enter-info {
+border-radius: 3px;
+color: #999;
+font-size: 1.2em;
+margin-bottom: 20px;
+padding: 6px 6px 6px 32px;
+text-align: left;
+}
+.continue{
+color: #777;
+font-size: 1.2em;
+margin-bottom: 25px;
+text-align: left;
+}
+.havenot{
+color: #696969;
+margin-top: 30px;
+text-align: center;
+}
+.notyet{
+background: none repeat scroll 0 0 rgba(22, 22, 22, 0.85);
+border-radius: 3px;
+color: #888;
+font-size: 1.3em;
+line-height: 35px;
+margin-left: auto;
+margin-right: auto;
+padding: 0 10px 10px;
+position: relative;
+text-align: center;
+top: 190px;
+width: 100%;
+}
+.sign-in {
+border-radius: 3px;
+color: #888;
+font-size: 1.6em;
+margin-top: -10px;
+padding: 10px 10px 10px 20px;
+text-align: left;
+width: 100%;
+}
+.new-person {
+border-radius: 3px;
+color: #888;
+font-size: 1.6em;
+margin-top: -10px;
+padding: 10px 10px 10px 20px;
+text-align: left;
+width: 100%;
+}
+.home-login{
+background: none repeat scroll 0 0 #232323;
+margin-bottom: 10px;
+margin-top: -7px;
+padding-bottom: 0;
+}
+// backgrounds 
+
+.homegray{
+background: linear-gradient(#1e1e1e, #1b1b1b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.homeltgray{
+background: linear-gradient(#1e1e1e, #1b1b1b) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.homewelcome{
+background: #1a1a1a;
+}
+.homelogin{
+background: none repeat scroll 0 0 #1f1f1f;
+border-radius: 0 3px 3px 0;
+margin-bottom: 10px;
+margin-left: 0;
+margin-top: -11px;
+}
+#logo{
+color: #c4c4c4;
+float: left;
+font: 1.85em 'Arial';
+text-decoration: none;
+letter-spacing: -1px;
+margin-right: 10px;
+padding: 8px;
+}
+#home-image{
+float: right;
+margin-top: -45px;
+}
+.home-left{
+background: none repeat scroll 0 0 #171717;
+border-radius: 3px 0 0 3px;
+margin-top: -20px;
+padding-bottom: 90px;
+padding-top: 18px;
+}
+.home-left-title{
+background:#111111;
+}
+.home-right{
+background: none repeat scroll 0 0 #0e0e0e;
+margin-top: -20px;
+}
+.home-right-title{
+background:#0e0e0e;
+}
+.margin-top-135{
+margin-top:135px;
+}
+.sign-up-row{
+margin-top:75px;
+background:#171717;
+padding:15px;
+padding-top:0;
+
+}
+.text-center{
+text-align:center;
+}
+.navbar-inverse {
+background-color:  #222;
+
+color:#fff;
+text-decoration: none;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+background-color: #222;
+color: #9f9f9f;
+}
+#register-btn{
+margin-left: 20px;
+position: relative;
+top: 82px;
+}
+.full-forms{
+font-color:#999;
+}
+.nav > li > a {
+    display: block;
+    
+    padding: 1px 0 0 20px;
+    position: relative;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #222;
+   
+    color: #8b8b8b;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding:5px 0 5px 20px;
+
+  
+    }
+    .nav > li > a:hover, .nav > li > a:focus {
+    background-color: #282828;
+        padding:5px 0 5px 20px;
+
+
+  
+    }
+.nav-pills > li > a {
+    border-radius: 0px;
+        
+        border-radius: 2px;
+    color: #c4c4c4;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding:5px 0 5px 20px;
+
+    
+}
+.panel-name {
+    background-color: #222;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin: 0 -15px;
+}
+.panel-title {
+    
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.navbar-inverse {
+    background-color: #222222;
+    border:0px;
+}
+.panel-default > .panel-heading {
+    background-color: #222;
+    border-color: #171717;
+    color: #c4c4c4;
+}
+.panel {
+    background-color: #2b2b2b;
+    border:solid 1px #222;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.fc-state-highlight {
+    background: none repeat scroll 0 0 #222;
+}

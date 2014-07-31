@@ -1,0 +1,55 @@
+  <button class="btn btn-primary mb10" data-toggle="modal" data-target="#myModal">
+    <%= fa_icon 'check' %> Check in
+  </button>
+    <button class="btn btn-default mb10" data-toggle="modal" data-target="#myModal">
+    <%= fa_icon 'building' %> Add to My Clubs
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="row">
+       <div class="col-sm-offset-4 col-sm-8">
+         <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+             <div class="well">
+              <div class="row">
+                <div class="col-xs-6">
+                  <p><%= @club.name %> - Check in</p>
+                </div>
+                <div class="col-xs-6">
+                 <button type="button" class="btn btn-danger float-right mb10" data-dismiss="modal"><%= fa_icon 'times' %> Cancel</button>
+               </div>
+             </div>
+             <div class="row">
+              <div class="col-xs-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><%= current_user %></h3>
+                </div>
+                <div class="panel-body">
+                  I just checked in at <%= @club.name %>
+                </div>
+              </div>
+              </div>
+              </div>
+
+              <div class="row">
+
+                <div class="col-sm-2">
+                  <%= render 'checkins/wait' %>
+                </div>
+                <div class="col-sm-2">
+
+               <button type="button" class="btn btn-primary"><%= fa_icon 'check-circle-o' %> Check in</button>
+               </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

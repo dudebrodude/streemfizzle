@@ -1,0 +1,21 @@
+<div class="col-sm-10">
+		<%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name), layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-2") do |f| %>
+		<div><%= f.email_field :email, autofocus: true, hide_label: :true, layout: :default, placeholder: "Email" %></div>
+		<div><%= f.password_field :password, autocomplete: "off", hide_label: :true, layout: :default, placeholder: "Password"  %></div>
+		<% if devise_mapping.rememberable? -%>
+		<div><%= f.check_box :remember_me %></div>
+		<% end -%>
+		<div><%= f.submit "Sign in", class: "btn btn-info" %></div>
+		<% end %>
+		</div>
+
+
+
+
+
+
+
+
+
+
+

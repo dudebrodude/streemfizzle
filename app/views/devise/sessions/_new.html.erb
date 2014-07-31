@@ -1,0 +1,38 @@
+
+<div class="col-sm-4">
+	<div class="holder bg2b b1p222">
+		<h1 class="holder-head mb20"><%= fa_icon 'edit' %> Sign in</h1>
+		<%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name), label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
+		<div><%= f.email_field :email, autofocus: true, hide_label: :true, placeholder: "Email" %></div>
+		<div><%= f.password_field :password, autocomplete: "off", hide_label: :true, placeholder: "Password"  %></div>
+		<% if devise_mapping.rememberable? -%>
+		<div><%= f.check_box :remember_me %></div>
+		<% end -%>
+		<div class="mb10"><%= f.submit "Sign in", class: "btn btn-info" %></div>
+		<% end %>
+		<a class="btn" data-toggle="modal" data-target="#myModal">
+			Haven't Signed Up Yet? Create an Account 
+		</a>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<%= render 'devise/registrations/new' %>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+

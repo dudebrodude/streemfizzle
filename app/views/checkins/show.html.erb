@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @checkin.title %>
+</p>
+
+<p>
+  <strong>Clubs:</strong>
+  <%= @checkin.clubs %>
+</p>
+
+<p>
+  <strong>Users:</strong>
+  <%= @checkin.users %>
+</p>
+
+<%= link_to 'Edit', edit_checkin_path(@checkin) %> |
+<%= link_to 'Back', checkins_path %>

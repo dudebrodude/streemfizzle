@@ -1,0 +1,24 @@
+   <div class="col-sm-12">
+          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    <%= fa_icon 'edit' %> New Post
+  </button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
+    <%= fa_icon 'photo' %> Upload Photo
+  </button>
+<table class="mt15">
+  <tbody>
+    <% @club.posts.each do |post| %>
+      <tr class="post-title">
+
+        <td><%= post.user.name %><span style="float:right; margin-right:10px;"><%="#{time_ago_in_words(post.created_at)} ago "%></td>
+      </tr>
+      <tr>
+       <td class="post-body"><%= post.title %></td>
+      </tr>
+            <tr>
+       <td class="post-footer"><%= fa_icon 'comment'%> Comment <%= fa_icon 'twitter'%> Tweet <%= fa_icon 'facebook'%> Share</td>
+      </tr>
+       <% end %>
+  </tbody>
+</table>
+</div>

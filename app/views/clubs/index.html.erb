@@ -1,0 +1,32 @@
+<div class="col-sm-9">
+
+   <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">All Clubs</h3>
+  </div>
+  <div class="panel-body">
+
+
+  <table>
+  <thead>
+    <tr>
+      <th>Name</th>
+          <th>Address</th>
+ 
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clubs.each do |club| %>
+      <tr>
+        <td><%= club.name %></td>
+        <td><%= club.address %></td>
+        <td><%= link_to 'Show', club %></td>
+        <td><%= link_to 'Edit', edit_club_path(club) %></td>
+        <td><%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+  </div>
+</div>

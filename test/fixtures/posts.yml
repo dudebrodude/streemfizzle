@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: "Headed here tonight!! Message me to get on the list"
+  club_id: 1
+  user_id: 1
+
+two:
+  title: "Headed here tonight!! Message me to get on the list"
+  club_id: 2
+  user_id: 2

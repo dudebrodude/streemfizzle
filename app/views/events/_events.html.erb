@@ -1,0 +1,26 @@
+
+   <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Calendar</h3>
+  </div>
+  <div class="panel-body">
+
+       <table>
+        <tbody>
+          <% @club.events.each do |event| %>
+            <tr>
+              
+            <td><%= event.date %></td>
+            <td><%= event.name %></td>
+          
+           </tr>
+          
+          <% end %>
+        </tbody>
+      </table>
+
+  </div>
+</div>
+
+
+

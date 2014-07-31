@@ -1,0 +1,87 @@
+   <% if user_signed_in? %>
+   <div class="col-sm-7">
+   	   <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Recent</h3>
+  </div>
+  <div class="panel-body">
+
+       <table>
+        <tbody>
+         
+            <tr>
+              
+            <td></td>
+            <td></td>
+          
+           </tr>
+          
+        
+        </tbody>
+      </table>
+
+  </div>
+</div>
+
+   </div>
+      <div class="col-sm-3">
+   <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"> <%= fa_icon 'bar-chart-o' %> My Points</h3>
+  </div>
+  <div class="panel-body">
+    <%= current_user.points %>
+
+       <table>
+        <tbody>
+         
+            <tr>
+              
+            <td></td>
+            <td></td>
+          
+           </tr>
+          
+        
+        </tbody>
+      </table>
+
+  </div>
+</div>
+
+   </div>
+
+
+
+  
+  <% else %>
+
+  <%= render 'devise/sessions/new' %>
+
+<% end %>
+
+
+
+
+
+<% if user_signed_in? %>
+<div class="col-sm-6">
+
+</div>
+<% else %>
+<div class="col-sm-8">
+  <div class="holder">
+
+  
+  <h3 class="holder-head"> New to Streemfeed?</h3>
+
+  </div>
+</div>
+<% end %>
+<% if user_signed_in? %>
+<div class="col-sm-3">
+
+</div>
+<% end %>
+
+

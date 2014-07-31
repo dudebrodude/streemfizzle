@@ -1,0 +1,19 @@
+   
+   <div class="col-sm-2 sidebar">
+      <div class="align-left"> <%= gravatar_for current_user %> </div>
+
+    <ul class="nav nav-pills nav-stacked">
+    <li class="<%= 'active' if params[:controller] == 'welcome' %>"> <a href="/"><p class="sideoption">  <%= fa_icon 'home' %><span style="color:#c4c4c4;"> Home </span></p></a> </li>
+        <li class="<%= 'active' if params[:controller] == 'inbox' %>"> <a href="/inbox"><h2 class="sideoption">  <%= fa_icon 'envelope' %><span style="color:#c4c4c4;"> Messages </span></h2></a> </li>
+           <li class="<%= 'active' if params[:controller] == 'photos' %>"> <a href="/photos"><h2 class="sideoption">  <%= fa_icon 'photo' %><span style="color:#c4c4c4;"> Photos </span></h2></a> </li>
+    <li class="<%= 'active' if params[:controller] == 'users' %>"> <a href="/users"><h2 class="sideoption">  <%= fa_icon 'child' %><span style="color:#c4c4c4;"> Friends </span></h2></a> </li>
+     <li class="<%= 'active' if params[:controller] == 'points' %>"> <a href="/points"><h2 class="sideoption">  <%= fa_icon 'bar-chart-o' %><span style="color:#c4c4c4;"> Points </span></h2></a> </li>
+    <li class="<%= 'active' if params[:controller] == 'clubs' %>"> <a href="/clubs"><h2 class="sideoption">  <%= fa_icon 'building-o' %><span style="color:#c4c4c4;"> Clubs </span></h2></a> </li>
+    <li class="<%= 'active' if params[:controller] == 'events' %>"> <a href="/events"><h2 class="sideoption">  <%= fa_icon 'calendar-o' %><span style="color:#c4c4c4;"> Event Calendar </span></h2></a> </li>
+
+  </ul>
+
+</div>
+
+
+
