@@ -1,41 +1,37 @@
    <% if user_signed_in? %>
    <div class="col-sm-7">
-   	   <div class="panel panel-default">
-<div class="title"><%= fa_icon 'bolt' %> What's Hot</div>
-  <div class="panel-body">
-
-
-
+     <div class="panel panel-default">
+      <div class="title"><%= fa_icon 'bolt' %> Recent</div>
+      <div class="panel-body">
+      </div>
+    </div>
   </div>
-</div>
-
-   </div>
-      <div class="col-sm-3">
-   <div class="panel panel-default">
-<%= render 'daycalendar' %>
-
-   </div>
-   <div class="title"><%= fa_icon 'bar-chart-o' %> Point Balance:</div>
-
-
-
- <% else %>
+  <div class="col-sm-3">
+   <div class="title"><%= fa_icon 'calendar-o' %> Today</div>
+   <%= render 'daycalendar' %>
+   <div class="section-header mt15"><%= fa_icon 'bar-chart-o' %> Point Balance:</div>
+   <div class="section-body">
+    <h4 class="point-balance">0</h4>
+  </div>
+  <div class="section-footer">
+  <h4 class="section-footer-option"> View Points Summary</h4>
+  </div>
+  <% else %>
   <%= render 'devise/sessions/new' %>
-<% end %>
-<% if user_signed_in? %>
-<div class="col-sm-6">
-</div>
-<% else %>
-<div class="col-sm-8">
-  <div class="holder">
-  <h3 class="holder-head"> New to Streemfeed?</h3>
+  <% end %>
+  <% if user_signed_in? %>
+  <div class="col-sm-6">
   </div>
-</div>
-<% end %>
-<% if user_signed_in? %>
-<div class="col-sm-3">
-
-</div>
-<% end %>
+  <% else %>
+  <div class="col-sm-8">
+    <div class="holder">
+      <h3 class="holder-head"> New to Streemfeed?</h3>
+    </div>
+  </div>
+  <% end %>
+  <% if user_signed_in? %>
+  <div class="col-sm-3">
+  </div>
+  <% end %>
 
 
