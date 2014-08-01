@@ -340,7 +340,7 @@ font-color:#999;
     margin-bottom: 20px;
 }
 .fc-state-highlight {
-    background: none repeat scroll 0 0 #222;
+    background: none repeat scroll 0 0 #272727;
 }
 .section-header{
      background: none repeat scroll 0 0 #222;
@@ -352,20 +352,18 @@ font-color:#999;
 }
 .section-body {
     background: none repeat scroll 0 0 #303030;
-    border-bottom:solid 1px #444;
-
-    margin-top: -15px;
-    padding: 15px;
+    border: 2px solid #222;
+   
 }
 .section-footer{
-    background:#333;
-    margin-top:-15px;
-    border-top:solid 1px #444444;
-}
+    background:#222;
+    padding-right:10px;
+
+
+      }
 .section-footer-option {
     color: #c4c4c4;
     font: 0.83em 'Arial';
-    margin: 0 5px 5px 0;
     text-align: right;
 }
 .point-balance{
