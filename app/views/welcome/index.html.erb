@@ -15,6 +15,7 @@
 
   <% else %>
   <%= render 'devise/sessions/new' %>
+  <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
   <% end %>
   <% if user_signed_in? %>
   <div class="col-sm-6">
