@@ -3,7 +3,7 @@
        
     <div class="col-sm-6">
   
-      <div class="gravatar"> <%= gravatar_for current_user %> </div>
+      <div class="gravatar"> <%= current_user.email %> </div>
     </div>
     <div class="col-sm-6">
       <%= current_user.name %>
