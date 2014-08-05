@@ -1,4 +1,11 @@
    <% if user_signed_in? %>
+   <div class="col-sm-3">
+     <div class="panel panel-default">
+      <div class="title"><%= fa_icon 'bar-chart-o' %> Point Balance</div>
+      <div class="panel-body">
+      </div>
+    </div>
+   </div>
    <div class="col-sm-7">
      <div class="panel panel-default">
       <div class="title"><%= fa_icon 'bolt' %> Recent</div>
@@ -6,29 +13,36 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
+ 
    
-   <%= render 'daycalendar' %>
-
-   
-
   <% else %>
   <%= render 'devise/sessions/new' %>
 
   <% end %>
   <% if user_signed_in? %>
-  <div class="col-sm-6">
-  </div>
+ 
   <% else %>
   <div class="col-sm-8">
     <div class="holder">
       <h3 class="holder-head"> New to Streemfeed?</h3>
+            <a class="btn btn-info" data-toggle="modal" data-target="#myModal">
+      Create an Account 
+    </a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <%= render 'devise/registrations/new' %>
+        </div>
+      </div>
+    </div>
+
     </div>
   </div>
   <% end %>
   <% if user_signed_in? %>
-  <div class="col-sm-3">
-  </div>
+
   <% end %>
 
 

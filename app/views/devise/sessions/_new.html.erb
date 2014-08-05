@@ -8,28 +8,22 @@
 		<% if devise_mapping.rememberable? -%>
 		<div><%= f.check_box :remember_me %></div>
 		<% end -%>
-		<div class="mb10"><%= f.submit "Sign in", class: "btn btn-info" %></div>
+		<div class="mb10"><%= f.submit "Sign in", class: "btn btn-primary" %></div>
 		<% end %>
 	
-		
- <%= fa_icon 'twitter' %> <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
+
+
 
 		
-<%= fa_icon 'facebook' %> <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+	</div>
+	<div class="holder bg2b b1p222">
 
-		<a class="btn" data-toggle="modal" data-target="#myModal">
-			Haven't Signed Up Yet? Create an Account 
-		</a>
+ <h4><%= fa_icon 'twitter' %> <%= link_to "Sign in with your Twitter account", user_omniauth_authorize_path(:twitter) %></h4>
 
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<%= render 'devise/registrations/new' %>
-				</div>
-			</div>
-		</div>
-		
+	</div>
+		<div class="holder bg2b b1p222">
+<h4><%= fa_icon 'facebook' %> <%= link_to "Sign in with your Facebook account", user_omniauth_authorize_path(:facebook) %></h4>
+
 	</div>
 
 </div>
