@@ -1,15 +1,26 @@
-<div class="col-sm-9">
+<div class="col-sm-6">
+  <div class="clublistsearch"><div class="dropdown">
+  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    Sort By <%= fa_icon 'caret-down' %></span>
+  </a>
+
+
+  <ul class="dropdown-menu bg25" role="menu" aria-labelledby="dLabel">
+   <p>Distance</p>
+   <p>Popularity</p>
+   <p>Rating<p>
+  </ul>
+</div></div>
 
 
 
     <% @clubs.each do |club| %>
-      <ul>
-        <li><%= club.name %></li>
+      <ol class="clublist">
+        <li><strong><%= club.name %></strong></li>
+         <li><%= fa_icon 'phone' %> <%= number_to_phone(club.phone, area_code: true) %></li>
         <li><%= club.address %></li>
-        <li><%= link_to 'Show', club %></li>
-        <li><%= link_to 'Edit', edit_club_path(club) %></li>
-        <li><%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-      </ul>
+        <li><%= link_to 'View Club', club, class: "btn btn-primary" %>
+      </ol>
     <% end %>
 
   </div>

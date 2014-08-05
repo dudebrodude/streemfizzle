@@ -35,7 +35,7 @@ validates :name, length: { minimum: 4 }
       # user to verify it on the next step via UsersController.finish_signup
       email_is_verified = auth.info.email && (auth.info.verified || auth.info.verified_email)
       email = auth.info.email if email_is_verified
-      avatar = auth.info.image
+      image = auth.info.image
       user = User.where(:email => email).first if email
 
       # Create the user if it's a new registration
@@ -44,7 +44,8 @@ validates :name, length: { minimum: 4 }
           name: auth.extra.raw_info.name,
           #username: auth.info.nickname || auth.uid,
           email: email ? email : "#{TEMP_EMAIL_PREFIX}-#{auth.uid}-#{auth.provider}.com",
-          password: Devise.friendly_token[0,20]
+          password: Devise.friendly_token[0,20],
+          image: auth.info.image
         )
         user.skip_confirmation!
         user.save!
