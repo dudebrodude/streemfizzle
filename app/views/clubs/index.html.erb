@@ -6,30 +6,31 @@
     </div>
 </div>
 <div class="col-sm-7">
+  
   <div class="clublistsearch">
- Search Results <%= fa_icon 'caret-down' %>
-    <div class="dropdown">
-  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
-   </span>
-  </a>
-
-
-  <ul class="dropdown-menu bg25" role="menu" aria-labelledby="dLabel">
-   <p>Distance</p>
-   <p>Popularity</p>
-   <p>Rating<p>
-  </ul>
-</div></div>
+Search Results <%= fa_icon 'caret-down' %>
+</div>
 
 
 
-    <% @clubs.each do |club| %>
-      <ol class="clublist">
-        <li><strong><%= club.name %></strong></li>
+
+     <% @clubs.each do |club| %>
+        <ol class="clublist">
+
+       
+   
+       
+        <li class="clublistname"><%= club.name %></li>
+       
+        
          <li><%= fa_icon 'phone' %> <%= number_to_phone(club.phone, area_code: true) %></li>
         <li><%= club.address %></li>
+        
+      
         <li><%= link_to 'View Club', club, class: "btn btn-primary" %>
+    
       </ol>
+     
     <% end %>
 
   </div>
