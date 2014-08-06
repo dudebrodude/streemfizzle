@@ -31,6 +31,9 @@ tr:hover {
 padding:5px;
 text-decoration:none;
 }
+a:link{
+    color:#fff;
+}
 .clublistsearch{
     background:#222;
     border-radius:3px;
@@ -40,7 +43,7 @@ text-decoration:none;
     margin-bottom:5px;
 }
 .clublistname {
-    background: none repeat scroll 0 0 #222222;
+    background: none repeat scroll 0 0 #111;
     border-radius: 1px;
     font: bold 1.1em 'Arial';
     margin-left: -7px;
@@ -430,3 +433,24 @@ background-color:#050505;
 color:#c4c4c4;
 text-decoration: none;
 }
+.signin-twitter{
+    background:#5bc0de;
+    border:solid 2px #333;
+    border-radius:3px;
+    color:#fff;
+    margin-bottom:5px;
+    padding:10px;
+
+
+
+}
+.signin-facebook{
+    background:#428bca;
+        border:solid 2px #333;
+    border-radius:3px;
+    color:#fff;
+    margin-bottom:5px;
+    padding:10px;
+
+}
+

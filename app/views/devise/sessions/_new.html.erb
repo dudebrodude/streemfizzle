@@ -1,5 +1,6 @@
 
 <div class="col-sm-4">
+	<div class="row">
 	<div class="holder bg2b b1p222">
 		<h1 class="holder-head mb20"><%= fa_icon 'edit' %> Sign in</h1>
 		<%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name), label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
@@ -16,13 +17,15 @@
 
 		
 	</div>
-	<div class="holder bg2b b1p222">
+</div>
+<div class="row">
+	
 
- <h4><%= fa_icon 'twitter' %> <%= link_to "Sign in with your Twitter account", user_omniauth_authorize_path(:twitter) %></h4>
+ <h4><%= link_to "Sign in with your Twitter account", user_omniauth_authorize_path(:twitter), class:"signin-twitter col-xs-12" %></h4>
 
-	</div>
-		<div class="holder bg2b b1p222">
-<h4><%= fa_icon 'facebook' %> <%= link_to "Sign in with your Facebook account", user_omniauth_authorize_path(:facebook) %></h4>
+
+		
+<h4><%= link_to "Sign in with your Facebook account", user_omniauth_authorize_path(:facebook), class:"holder signin-facebook col-xs-12" %></h4>
 
 	</div>
 
