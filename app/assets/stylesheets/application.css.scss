@@ -125,7 +125,7 @@ text-decoration:none;
     padding: 10px;
 }
 .holder-head {
-    background: none repeat scroll 0 0 #222;
+    background: none repeat scroll 0 0 #111;
     border-bottom: 1px solid #333;
     border-radius: 5px 5px 0 0;
     color: #c4c4c4;
@@ -409,4 +409,24 @@ font-color:#999;
 .calendar{
     border-radius:3px;
     background:none;
+}
+.navbar-nav > li > .dropdown-menu {
+    background: none repeat scroll 0 0 #111;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+}
+.dropdown-menu > li > a {
+    clear: both;
+    color: #c4c4c4;
+    display: block;
+    font-weight: normal;
+    line-height: 1.42857;
+    padding: 3px 20px;
+    white-space: nowrap;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus  {
+background-color:#050505;
+color:#c4c4c4;
+text-decoration: none;
 }
