@@ -1,14 +1,21 @@
    <% if user_signed_in? %>
    <div class="col-sm-3">
-    
 
      <div class="panel panel-default">
-      <div class="title"><%= fa_icon 'bar-chart-o' %> Point Balance</div>
-      <div class="panel-body">
-        0
+      <div class="title"><%= fa_icon 'dashboard' %> Dashboard</div>
+      <div class="panel-body p0">
+        <div class="col-sm-4 m0">
+   <div> <%= image_tag current_user.image %> </div>
+
+    </div>
+    <div class="col-sm-8 m0">
+        <p><strong><%= current_user.name %></strong></p>
+        <p class="location"><%= fa_icon 'globe' %> <%= current_user.location %></p>
+ 
+        </div>
       </div>
     </div>
-    <div class="panel panel-default">
+        <div class="panel panel-default">
       <div class="title"><%= fa_icon 'slack' %> Following </div>
       <div class="panel-body">
 <div class="stats">
@@ -28,6 +35,16 @@
       </div>
 
     </div>
+    
+
+     <div class="panel panel-default">
+      <div class="title"><%= fa_icon 'bar-chart-o' %> Point Balance</div>
+      <div class="panel-body">
+    
+        0
+      </div>
+    </div>
+
    </div>
    <div class="col-sm-7">
      <div class="panel panel-default">
