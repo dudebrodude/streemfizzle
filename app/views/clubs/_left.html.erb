@@ -3,16 +3,15 @@
    <div class="col-sm-10">
 
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
             <div class="row">
 <div class="col-sm-12">
   <%= render 'checkin' %>
 </div>
     </div>
-        <div class="panel panel-default">
-          <div class="section-header">
-            <h3 class="panel-title"><%= @club.name %> <span style="float:right;">   </span> </h3> 
-            <div class="clubaddress">
+         <div class="panel panel-default">
+      <div class="title"><%= @club.name %> </div>
+      <div class="panel-body p0">
               <table>
                 <tbody>
                   <tr>
@@ -23,15 +22,17 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </div>
-          <div class="section-body">
-           <%= render 'gmap' %>
-         </div>
-       </div>
+               <%= render 'gmap' %>
+      </div>
+    </div>
+
      </div>
      <div class="col-sm-6">
-     PHOTOS HERE
+     <div class="panel panel-default">
+      <div class="title"><%= fa_icon 'clock-o' %> Recent Activity</div>
+      <div class="panel-body">
+      </div>
+    </div>
     </div>
   </div>
 

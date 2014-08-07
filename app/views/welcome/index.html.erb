@@ -11,20 +11,8 @@
     <div class="col-sm-8 m0">
         <p><strong><%= current_user.name %></strong></p>
         <p class="location"><%= fa_icon 'globe' %> <%= current_user.location %></p>
- 
-        </div>
-      </div>
-    </div>
-        <div class="panel panel-default">
-      <div class="title"><%= fa_icon 'slack' %> Following </div>
-      <div class="panel-body">
-<div class="stats">
-  <a href="<%= following_users_path(@user) %>">
-    <strong id="following" class="stat">
-      <%= current_user.followed_users.count %>
-    </strong>
-    following
-  </a>
+ <div class="stats">
+
   <a href="<%= followers_users_path(@user) %>">
     <strong id="followers" class="stat">
       <%= current_user.followers.count %>
@@ -32,9 +20,10 @@
     followers
   </a>
 </div>
+        </div>
       </div>
-
     </div>
+
     
 
      <div class="panel panel-default">
