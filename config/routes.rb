@@ -22,12 +22,18 @@ Streemfeed::Application.routes.draw do
 
   resources :profiles
 
+
   
 
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
    get 'users' => 'users#index'
    get 'users/:id' => 'users#show'
-
+resource :users do
+    member do
+      get :following, :followers
+    end
+  end
+    resources :relationships, only: [:create, :destroy]
 
   
 

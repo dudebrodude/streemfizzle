@@ -1,10 +1,32 @@
    <% if user_signed_in? %>
    <div class="col-sm-3">
+    
+
      <div class="panel panel-default">
       <div class="title"><%= fa_icon 'bar-chart-o' %> Point Balance</div>
       <div class="panel-body">
         0
       </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="title"><%= fa_icon 'slack' %> Following </div>
+      <div class="panel-body">
+<div class="stats">
+  <a href="<%= following_users_path(current_user) %>">
+    <strong id="following" class="stat">
+      <%= current_user.followed_users.count %>
+    </strong>
+    following
+  </a>
+  <a href="<%= followers_users_path(current_user) %>">
+    <strong id="followers" class="stat">
+      <%= current_user.followers.count %>
+    </strong>
+    followers
+  </a>
+</div>
+      </div>
+
     </div>
    </div>
    <div class="col-sm-7">
